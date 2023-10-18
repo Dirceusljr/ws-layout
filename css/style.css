@@ -4,7 +4,6 @@
 }
 
 body {
-    background-color: gray;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -63,16 +62,59 @@ div#cabecalho {
     padding: 10px;
     border: 0;
     border-radius: 5px;
+    text-decoration: none;
+    transition: background 1s, font 500ms;
+}
+
+.btn-orange:hover {
+    background-color: rgb(165, 5, 5);
+    font-weight: bold;
 }
 
 #banner {
-    width: 100%;
     height: 500px;
-    background-color: brown;
+    background-color: white;
+    
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+
+    align-items: center;
+}
+
+.col-50 {
+    width: 50%;
+    padding: 20px;
 }
 
 #cartoes {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 200px;
-    background-color: aqua;
+    background-color: #e7e7e7;
+
+    display: flex;
 }
+
+#cartoes .col-25:hover {
+    background: #fe365f;
+
+}
+
+.col-25 {
+    width: 25%;
+    padding: 10px;
+}
+
+.text-orange {
+    color: orangered
+}
+
+.text-blue{
+    color: rgb(4, 4, 75);
+}
+
+h1.title {
+    font-size: 6em;
+}
+
